@@ -1,0 +1,9 @@
+[Core]
+name = coala_monitor
+module = coala_monitor
+
+[Documentation]
+description = Do not use 'sir' in conversation to sound more friendly'.
+
+[Python]
+version = 3
