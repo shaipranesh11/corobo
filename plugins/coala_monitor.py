@@ -9,10 +9,18 @@ class Coala_lowercase_c(BotPlugin):
 
     def callback_message(self, msg):
         emots = [':(', ':angry:', ':confounded:',
-                 ':disappointed:', ':triumph:']
+                 ':disappointed:', ':triumph:', ':D']
 
         match_coala = re.search(r'(?:^|[^\w])C+[Oo]+[Aa]+[Ll]+[Aa]+(?:$|[^\w])',
                                 msg.body)
+        match_sir = 'sir' in msg.body
+        if match_sir:
+            self.send(
+                msg.frm,
+                '@{}, Do not use \'sir\', so u can sound friendly.'.format(
+                    msg.frm.nick, emots[5]
+                )
+            )
         if match_coala:
             self.send(
                 msg.frm,
