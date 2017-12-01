@@ -326,7 +326,7 @@ class LabHub(BotPlugin):
             'level higher than newcomer or low difficulty.',
             '- A newcomer cannot be assigned to unlabelled issues.',
             '- You cannot be assigned to a medium level issue if you are not a developer.'
-            'If you want to be a developer you need to complete all the 5 tasks in http://api.coala.io/en/latest/Developers/Newcomers_Guide.html'        ]
+            'If you want to be a developer you need to complete all the 5 tasks in http://api.coala.io/en/latest/Developers/Newcomers_Guide.html'    
         ]
         try:
             iss = self.REPOS[repo_name].get_issue(int(iss_number))
