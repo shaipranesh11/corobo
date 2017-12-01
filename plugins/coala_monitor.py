@@ -17,7 +17,7 @@ class Coala_lowercase_c(BotPlugin):
         if match_sir:
             self.send(
                 msg.frm,
-                '@{}, Do not use \'sir\', so u can sound friendly.'.format(
+                '@{}, Do not use \'sir\', so u sound friendly.'.format(
                     msg.frm.nick, emots[5]
                 )
             )
