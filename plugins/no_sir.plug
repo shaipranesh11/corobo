@@ -1,0 +1,9 @@
+[Core]
+name = no_sir
+module = no_sir
+
+[Documentation]
+description = Ask people to not use 'sir' when they do.
+
+[Python]
+version = 3
